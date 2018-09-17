@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plate</title>
+</head>
+<body>
+<div id="openseadragon1" style="width: 600px; height: 600px; border:solid 1px black"></div>
+<script src="https://faims.github.io/tiles/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+    	visibilityRatio: 1.0,
+    	constrainDuringPan: true,
+    	showNavigator:  true,
+    	immediateRender: true,
+    	autoHideControls: true,
+    	showFullPageControl: false,
+    	showNavigationControl: false,
+        id: "openseadragon1",
+        prefixUrl: "https://faims.github.io/tiles/openseadragon/images/",
+        tileSources: "https://faims.github.io/tiles/{1}"
+    });
+</script>
+</body>
+</html>
